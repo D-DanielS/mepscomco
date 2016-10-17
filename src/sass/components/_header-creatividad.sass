@@ -1,0 +1,26 @@
+.contenedor__header__creatividad
+    @include widthHeight(100%, 450px)
+    background: $header-triangle
+    position: relative
+    overflow: hidden
+    &__img
+        padding-top: 6.5em
+        >figure
+            width: 280px
+            @extend %image
+    
+    &__float
+        @include widthHeight(100%, 120px)
+        position: absolute
+        bottom: -1px
+        left: 0
+        right: 0
+        z-index: 4
+        overflow: hidden
+
+        @include mainCenter
+
+        &__triangle
+            border-left: 800px solid $blanco
+            border-right: 800px solid $blanco
+            border-top: 120px solid rgba($blanco, .0000011)

@@ -1,0 +1,35 @@
+@include mediaMin(1024)
+    .web, .movil
+        &__contenedor
+            width: 90% 
+            margin: 0 auto
+            &__item
+                display: flex
+                justify-content: center
+                align-items: center
+                margin: 5em 0
+                &:nth-child(2)
+                    .web__contenedor__item
+                        &__image
+                            order: 2
+                        &__description
+                            order: 1
+
+
+                &__image
+                    width: 40%
+                &__description
+                    width: 50%
+
+        .movil
+            &__contenedor
+                &__item
+                    &__description
+                        &__button
+                            width: 250px
+@include mediaMin(1300)
+    .web, .movil
+        &__contenedor
+            width: 75%
+            margin: 0 auto
+

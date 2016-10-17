@@ -1,0 +1,46 @@
+.clientes
+    background: $blanco
+
+    &__title
+        padding-top: 7em
+        padding-bottom: 1em
+        >h2
+            @extend %titulos
+            color: #2d2d2d
+
+    &__items
+        padding-bottom: 2em
+        &__logo
+            width: 200px
+            padding: .8em 0
+            filter: grayscale(100%)
+
+
+            &:nth-child(2)
+                width: 120px
+
+            &:nth-child(6)
+                width: 100px
+
+            &:nth-child(7)
+                width: 130px
+
+            @extend %image
+
+    &__button
+        text-align: center
+        >button
+            @include  button($carmin, $blanco)
+            &:hover
+                background: $carmin
+
+.clientesNone
+    display: none
+    @include mediaMin(1300)
+        .clientes
+            &__items
+                padding-top: 2em !important
+
+
+.clientesActive
+    display: block 

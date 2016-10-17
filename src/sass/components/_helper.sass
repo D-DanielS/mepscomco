@@ -1,0 +1,87 @@
+%image
+    margin: 0 auto
+    >img
+        @include imageR
+
+
+%parrafo
+    color: $blanco
+    font-size: $font-sizeP
+    font-family: $font
+    font-weight: 400
+    margin: 0 auto
+    line-height: 1.5
+
+%titulos
+    text-transform: uppercase
+    text-align: center
+    color: $blanco
+    font-family: $font
+    font-size: $font-sizeT
+    font-weight: 200
+
+%fontP
+    color: $blanco
+    font-family: $font
+
+%fontT
+    color: $blanco
+    font-size: $font-sizeT
+    font-family: $font
+
+%buttonStyle
+    @include button(transparent, $blanco)
+    width: 200px
+    text-transform: uppercase
+    font-size: responsive 16px 20px
+    border: 1px solid $blanco
+    outline: none
+    &:hover
+        background: $blanco
+
+
+%titlePublipan
+    text-transform: uppercase
+    text-align: center
+    color: $carmin
+    font-family: $font
+    font-size: responsive 17px 18px
+    padding-top: 2em
+    padding-bottom: 1em
+
+
+%subtitlePublipan
+    text-align: center
+    color: $gris
+    font-family: $font
+    font-size: responsive 25px 38px
+    padding-bottom: 1em
+
+
+%modal
+    display: none
+    position: fixed
+    z-index:9999999 !important
+    top: 0%
+    left: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background: rgba($negro,.78)
+
+
+%modalventana
+    background: #fafafa
+    margin: 13% auto
+    padding: 20px
+    border: 2px solid rgba($negro,.1)
+    width: 80%
+    box-shadow: 0 0 30px rgba($negro,.9)
+    border-radius: 5px
+
+
+%parrafoIndex
+    @extend %fontP
+    font-size: responsive 23px 24px
+    font-weight: 200
+    letter-spacing: 1px

@@ -1,0 +1,93 @@
+.interfaz
+    &__title
+        padding: 2em 0
+        >h2
+            @extend %titulos
+            color: $gris
+            font-weight: normal
+    &__description
+        width: 90%
+        margin: 0 auto
+        padding: 1em 0
+        >p 
+            @extend %parrafo
+            color: $gris
+        
+    &__contenedor
+        display: flex
+        justify-content: space-around
+        .interfaz__items
+            border: 1px solid red 
+            >figure
+                width: 100px
+                
+                @extend %image
+                >img
+                    border-radius: 50%
+            >figcaption
+                padding-top: 1em
+                @extend %parrafo
+                color: $gris
+                text-transform: uppercase
+                text-align: center
+
+
+
+    &__contenedor__image
+        margin: 2em 0
+        &__web
+            border: 1px solid red 
+            width: 90%
+            margin: 1em auto
+            >figure
+                width: 280px
+                @extend %image
+
+        &__movil
+            border: 1px solid blue 
+            width: 90%
+            margin: 0 auto
+            >figure
+                width: 280px
+                @extend %image
+
+
+    &__app
+        &__title
+            margin: 2em 0
+            >h2
+                @extend %titulos
+                color: $gris
+                font-weight: normal
+
+        &__container
+            display: flex
+            align-items: center
+            justify-content: space-around
+            .app__item
+                border: 1px solid blue
+                >figure
+                    border: 1px solid red 
+                    @extend %image
+                    >img
+                        border-radius: 50%
+                    >figcaption
+                        text-align: center
+                        @extend %parrafo
+                        color: $gris
+                        font-size: responsive 15px 20px
+                        text-transform: uppercase
+                    
+
+
+    &__app__phone
+        margin: 2em 0
+        .phone
+            width: 90%
+            margin: 0 auto
+            border: 1px solid red
+            >figure
+                width: 200px
+                @extend %image
+
+

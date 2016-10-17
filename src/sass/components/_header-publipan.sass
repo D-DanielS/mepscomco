@@ -1,0 +1,83 @@
+.contenedor__header__publipan
+    @include widthHeight(100%, 500px)
+    background: $header-triangle
+    @include url-images(bgp , $formato: jpg)
+    @include bgi
+    position: relative
+    overflow: hidden
+
+    &__video
+        .header__button
+            position: absolute
+            top: 45%
+            left: 43.5%
+            @include mediaMin(767)
+                left: 46%
+            @include mediaMin(1024)
+                left: 47%
+            @include mediaMin(1300)
+                left: 47.5%
+
+            >img 
+                width: 75px
+                max-width: 100%
+                &:active
+                    transform: scale(.98)
+
+    &__float
+        @include widthHeight(100%, 120px)
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        
+        z-index: 4
+        overflow: hidden
+
+        @include mainCenter
+
+        &__triangle
+            border-left: 800px solid $blanco
+            border-right: 800px solid $blanco
+            border-top: 120px solid rgba($blanco, .0000011)
+            
+            // border-top: 120px solid rgba($header-triangle,.1)
+
+
+
+#bgvideo
+    @extend %modal
+    // display: block
+    &publipan
+        width: 80%
+        height: auto
+        margin: 12% auto
+        text-align: center
+        position: relative
+        >a 
+            position: absolute
+            
+            top: -10%
+            left: 23%
+            color: $negro
+            border : 1px solid $blanco 
+            width: 25px
+            height: 25px
+            border-radius: 50%
+            background: $blanco
+            font-weight: bold
+            box-shadow: 0 0 10px solid $negro
+
+
+            .items__video
+                margin-top: 2em !important
+                height         : 0
+                overflow       : hidden
+                padding-bottom : 56.25%
+                position       : relative
+                >iframe
+                    position : absolute
+                    top      : 0
+                    left     : 0
+                    width    : 100%
+                    height   : 100%

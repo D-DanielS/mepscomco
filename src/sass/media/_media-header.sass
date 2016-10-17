@@ -1,0 +1,46 @@
+@include mediaMin(480)
+    .contenedor__header
+        &__img
+            >figure
+                width: 400px
+
+@include mediaMax(640)
+    .contenedor__header
+        height: 500px
+
+@include mediaMin(640)
+    .contenedor__header
+        &__img
+            >figure
+                width: 500px
+
+@include mediaMin(768)
+    #bgventana
+        #ventana
+            margin: 8% auto
+            width: 65%
+    .contenedor__header
+        &__img
+            >figure
+                width: 550px
+
+@include mediaMin(1024)
+    #bgventana
+        #ventana
+            margin: 5% auto
+            width: 55%
+
+    .contenedor__header
+        &__img
+            >figure
+                width: 500px
+
+
+@include mediaMin(1300)
+    #bgventana
+        #ventana
+            width: 35%
+    .contenedor__header
+        &__img
+            >figure
+                width: 650px

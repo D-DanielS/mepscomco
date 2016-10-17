@@ -1,0 +1,26 @@
+.comofunciona
+    &__title
+        .title
+            @extend  %titlePublipan
+        .subtitle
+            @extend  %subtitlePublipan
+            font-weight: 200
+    &__info
+        width: 90%
+        margin: 0 auto
+        &__image
+            padding-bottom: 1.5em
+            >figure
+                width: 260px
+                @extend %image
+        &__description
+            padding-bottom: 2em
+            >p 
+                line-height: 1.4
+                font-size: responsive 18px 19px
+                &:last-child
+                    font-weight: bold
+                    padding: .7em 0
+        .hr
+            width: 90%
+            margin: 0 auto

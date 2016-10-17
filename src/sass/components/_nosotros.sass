@@ -1,0 +1,31 @@
+.nosotros__contenedor
+    @include widthHeight(100%, 100vh)
+    background: $bg-nosotros
+    padding-bottom: 3em
+    overflow: hidden
+    &__title
+        padding-top: 3em
+        >h2
+             @extend %titulos
+             letter-spacing: 2px
+             padding-top: 2.5em
+             padding-bottom: 1.5em
+             color: $blanco
+
+    &__dev
+        &__description
+            width: 95%
+            margin: 0 auto
+            padding-top: 2em
+            >p
+                @extend %parrafoIndex
+                width: 100
+                margin: 0 auto
+                color: $blanco
+
+        &__image
+            @include widthHeight(100% , 400px)
+            >figure
+                display: none
+                width: 250px
+                @extend %image

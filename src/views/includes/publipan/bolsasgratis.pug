@@ -1,0 +1,81 @@
+
+#modal
+    #modalventana
+        a(href="javascript:formPublipan('none');") Cerrar
+        form(action="")
+            .colum1
+                label ¿Cómo se llama su panadería?
+                input(type="text", name=""  required)
+
+                label ¿En qué dirección se encuentra ubicada?
+                input(type="text", name="" required)
+
+                label Barrio
+                input(type="text", name="" required)
+
+                label Teléfono
+                input(type="tel", maxlength="10" required)
+
+                label Municipio
+                input(type="text", name="" required)
+
+
+            .colum2
+
+                label Tipo de establecimiento
+                select(name="")
+                    option(value="") tienda
+                    option(value="") panadería
+                    option(value="") droguería
+
+
+                label Prodría indicarnos cuántas tiene?
+                input(type="number", min="0" max="10" required value="1")
+
+                label Cierra el establecimiento algún día por descanso semanal?
+                select(name="" required)
+                    option(value="") lunes
+                    option(value="") martes
+                    option(value="") miércoles
+                    option(value="") jueves
+                    option(value="") viernes
+                    option(value="") sábado
+                    option(value="") domingo
+
+                label Cuántas bolsas usa por semana?
+                select(name="" required)
+                    option(value="") 100 - 200
+                    option(value="") 201 - 500
+                    option(value="") 501 - 1.000
+                    option(value="") más de 1.000
+
+                //- .avisolegal
+                //-     a(href="./pdf/politicas-de-tratamiento-de-la-informacion.pdf" download="avisolegal") Aviso legal
+                //-     input(type="checkbox" required)
+            .button
+                button enviar
+
+
+
+
+.bolsas__triangle__contenedor
+    .bolsas__triangle__contenedor__float
+        .bolsas__triangle__contenedor__float__bolsas__triangle
+
+    .bolsas__triangle__content
+
+        .bolsas__triangle__title
+            h2  ¿desea bolsas gratis?
+
+        .bolsas__triangle__contenedor__dev
+
+            .bolsas__triangle__contact
+                .bolsas__triangle__contact__image
+                    figure
+                        img(src="./images/contacto.svg", alt="image")
+                .bolsas__triangle__contact__description
+                    p Si tienes un local donde se dispensa pan queremos saberlo para poder enviarte bolsas gratis.
+
+            .bolsas__triangle__contenedor__dev__button
+                a(href="javascript:formPublipan('block');")
+                    button Más Info >>

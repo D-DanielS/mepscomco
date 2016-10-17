@@ -1,0 +1,84 @@
+footer
+    background-color: $bg-footer
+
+.footer
+    height: auto
+    padding-top: 5em
+    &__info__contenedor
+        width: 100%
+        margin: 0 auto
+        &__items
+            .items
+                width: 95%
+                margin: 0 auto
+                @include flex
+                align-items: center
+                >p
+                    padding-left: 1em
+                    @extend %fontP
+                    font-size: responsive 18px 19px
+                    font-weight: 300
+                    line-height: 2.7
+                >i
+                    color: $blanco
+                .fa-map-marker,
+                .fa-mobile,
+                .fa-whatsapp,
+                .fa-envelope
+                    font-size: 1.8em
+                    padding-left: .1em
+
+                .fa-map-marker
+                    padding-left: .25em
+
+                .fa-mobile
+                    font-size: 2em
+                    padding-left: .2em
+                .fa-whatsapp
+                    font-size: 1.7em
+                .fa-envelope
+                    font-size: 1.5em
+                &:nth-child(2)
+                    >p
+                        padding-left: 1.2em
+
+                &:nth-child(3)
+                    >p
+                        padding-left: .6em
+
+                &:nth-child(4)
+                    >p
+                        padding-left: .6em
+
+        .footer__button
+            text-align: center
+            padding-top: 4em
+            >button
+                @include  button(transparent, $blanco)
+                &:hover
+                    color: rgba($negro,.6)
+
+    &__socialmedia
+        @include mainDistribute
+        width: 95%
+        margin: 0 auto 
+        padding: 1em 0
+        padding-top: 1em
+        &__items
+            >i
+                color: $blanco
+            .fa-facebook,
+            .fa-twitter,
+            .fa-instagram,
+            .fa-youtube-play
+                font-size: 2em
+
+
+.footer__derechos
+    background: $bg-footer
+    padding: 1em 0
+    text-align: center
+    >p
+        @extend %parrafo
+        text-transform: capitalize
+        font-size: responsive 18px 19px

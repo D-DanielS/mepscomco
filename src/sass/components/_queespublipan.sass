@@ -1,0 +1,43 @@
+.publipan
+    &__qe
+        padding-bottom: 1em
+        &__title
+            width: 90%
+            margin: 0 auto
+            .title
+                @extend %titlePublipan
+                
+
+            .subtitle
+                @extend %subtitlePublipan
+                font-weight: 200
+
+        &__description
+            width: 90%
+            margin: 0 auto
+            >p
+                line-height: 1.4
+                font-size: responsive 18px 19px
+
+
+        &__container
+                &__subtitle
+                    width: 90%
+                    margin: 0 auto
+                    padding: 1em 0
+                    .subtitle
+                       @extend %subtitlePublipan
+                       font-weight: 200
+                &__info
+                    width: 90%
+                    margin: 0 auto
+                    &__image
+                        >figure
+                            width: 180px
+                            @extend %image
+
+                    &__description
+                        padding-top: 1.3em
+                        >p
+                            line-height: 1.4
+                            font-size: responsive 18px 19px

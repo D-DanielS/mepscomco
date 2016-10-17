@@ -1,0 +1,81 @@
+@include mediaMin(480)
+    .clientes
+        &__items
+            @include mainDistribute
+            width: 80%
+            margin: 0 auto
+            &__logo
+                text-align: center
+                width: 40%
+                margin: .3em 1em
+
+                &:nth-child(2)
+                    width: 80px
+            
+                &:nth-child(6)
+                    width: 70px
+            
+                &:nth-child(7)
+                    width: 100px
+
+                >figure
+                    max-width: 100%
+                    width: 80px
+                >figure
+                    width: 210px
+                    max-width: 100%
+
+
+
+@include mediaMin(640)
+    .clientes
+        &__items
+            &__logo
+                width: 27%
+                &:nth-child(2)
+                    width: 90px
+            
+                &:nth-child(6)
+                    width: 80px
+            
+                &:nth-child(7)
+                    width: 100px
+
+                >figure
+                    max-width: 100%
+                    width: 100px
+                
+
+
+
+@include mediaMin(768)
+    .clientes
+        &__items
+            &__logo
+                width: 22%
+                >figure
+                    width: 150px
+                
+                
+
+
+@include mediaMin(1024)
+    .clientes
+        height: auto
+        &__title
+            padding-top: 6.5em
+            padding-bottom: 1em
+        &__items
+            width: 70%
+            justify-content: center
+            &__logo
+                width: 22%
+                >figure
+                    width: 150px
+                
+                
+
+
+
+
+

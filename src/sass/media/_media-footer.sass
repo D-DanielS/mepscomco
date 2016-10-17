@@ -1,0 +1,133 @@
+@include mediaMin(480)
+    .footer
+        &__info__contenedor
+            width: 60%
+        &__socialmedia
+            width: 80%
+            text-align: center
+            &__items
+                margin: 0 .5em
+
+@include mediaMin(640)
+    .footer
+        &__info__contenedor
+            width: 70%
+            &__items
+                width: 75%
+                margin: 0 auto
+        &__socialmedia
+           width: 70%
+           padding-top: 2em
+
+@include mediaMin(768)
+    .footer
+        &__info__contenedor
+            &__items
+                width: 65%
+                margin: 0 auto
+
+@include mediaMin(1024)
+    .footer
+        padding-top: 2em
+        &__info__contenedor
+            width: 70%
+            display: flex
+            align-items: flex-start
+            justify-content: space-around
+
+
+            
+// @include mediaMax(1024)
+//     .footer__web
+//         display: none
+
+
+// @include mediaMin(1024)
+//     .footer
+//         display: none
+        // &__web
+        //     display: flex !important
+
+        //     &__contenedor
+        //         width: 100%
+        //         display: flex
+        //         align-items: center
+        //         background: #A4D6B1
+        //         &__image
+        //             width: 40%
+        //             >figure
+        //                 width: 550px
+        //                 >img
+        //                     width: 100%
+        //                     max-width: 100%
+
+
+
+        //         &__info
+        //             width: 55%
+        //             margin: 0 auto
+        //             @include mainDistribute
+        //             flex-direction: column
+        //             &__location
+        //                 width: 100%
+        //                 @include mainCenter
+
+        //                 .items__web
+        //                     @include mainJustify
+        //                     justify-content: flex-start
+        //                     padding-left: 2.5em
+        //                     width: 50%
+        //                     height: 60px
+        //                     >p
+        //                         text-shadow: 0 0 5px darken(#7BBF8A,10)
+        //                         color: $blanco
+        //                         font-size: $font-sizeP
+        //                         font-family: $font
+        //                         font-weight: 400
+        //                         line-height: 1.5
+        //                         padding-left: .8em
+
+        //                     .fa-map-marker,
+        //                     .fa-mobile,
+        //                     .fa-whatsapp,
+        //                     .fa-envelope
+        //                         font-size: 2.5em
+        //                         padding-left: .1em
+        //                         color: $blanco
+        //                         text-shadow: 0 0 5px darken(#7BBF8A,10)
+        //                     .fa-map-marker
+        //                         padding-left: .25em
+
+        //                     .fa-mobile
+        //                         font-size: 2.7em
+        //                         padding-left: .2em
+        //                     .fa-whatsapp
+        //                         font-size: 2.3em
+        //                     .fa-envelope
+        //                         font-size: 2em
+        //                     &:nth-child(2)
+        //                         >p
+        //                             padding-left: 1.2em
+
+        //                     &:nth-child(3)
+        //                         >p
+        //                             padding-left: .6em
+
+        //                     &:nth-child(4)
+        //                         >p
+        //                             padding-left: .6em
+
+
+        //             .footer__web__socialmedia
+        //                 @include mainDistribute
+        //                 width: 70%
+        //                 margin: 2em auto
+        //                 margin-bottom: 5em
+        //                 &__items
+        //                     .fa-facebook,
+        //                     .fa-twitter,
+        //                     .fa-instagram,
+        //                     .fa-youtube-play
+        //                         font-size: 2.5em
+        //                         color: $blanco
+        //                         text-shadow: 0 0 7px darken(#A4D6B1,10)

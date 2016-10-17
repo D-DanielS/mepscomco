@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Mep´s S.A.S</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png"/>
+    <link rel="manifest" href="./images/manifest.json"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+  </head>
+  <body>
+    <nav>
+      <div class="menu__movil"><a class="menu__movil__main" href="index.html"><img src="./images/logoWhite.png" alt="logo"/></a><i class="fa fa-bars fa-2x iconMenu" id="iconMenu"></i></div>
+      <ul class="menu menu__index" id="menu">
+        <li class="menu__item"><a class="menu__item__link" href="index.html">inicio</a></li>
+        <li class="menu__item"><a class="menu__item__link" href="trabajos.html">trabajos</a></li>
+        <li class="menu__item"><a class="menu__item__link" href="publipan.html">publipan    </a></li>
+        <li class="menu__item contacto"><a class="menu__item__link" href="javascript:desplegar('block');">contacto</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="circle__contenedor"><a class="circle scroll" href="#id-1"></a><a class="scroll circle" href="#id-2"></a><a class="scroll circle" href="#id-3"></a><a class="circle scroll" href="#id-4"></a><a class="scroll circle" href="#id-5"></a><a class="scroll circle" href="#id-6"></a><a class="circle scroll" href="#id-7"></a><a class="scroll circle" href="#id-8">  </a><a class="circle scroll" href="#id-9"></a></div>
+    </section>
+    <header id="id-1">
+      <div id="bgventana">
+        <div id="ventana"><a href="javascript:desplegar('none');">Cerrar</a>
+          <form>
+            <label>nombre</label>
+            <input type="text" name="name" autofocus="autofocus" required="required"/>
+            <label>correo electrónico</label>
+            <input type="email" name="mail" required="required"/>
+            <label>teléfono</label>
+            <input type="tel" maxlength="10"/>
+            <label>mensaje</label>
+            <textarea id="mensaje" name="" cols="30" rows="10" required="required"></textarea>
+            <div class="politica__datos">
+              <input type="checkbox" required="required"/>
+              <p>Aceptas las condiciones y confirmas nuestra <a href="./pdf/politicas-de-tratamiento-de-la-informacion.pdf"  download="PoliticaDatos">Política de datos. </a></p>
+            </div>
+            <div class="button">
+              <button>enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="contenedor__header">
+        <div class="contenedor__header__img">
+          <figure><img src="./images/ciudad-header.svg" alt="img"/></figure>
+          <div class="header__title scrollflow -slide-top -opacity">
+            <h2>impulsando ideas</h2>
+            <p> Brindamos seguimiento a sus clientes</p>
+          </div>
+        </div>
+        <div class="contenedor__header__float">
+          <div class="contenedor__header__float__triangle"></div>
+        </div>
+      </div>
+    </header>
+    <section id="id-2">
+      <div class="nosotros__contenedor">
+        <div class="nosotros__contenedor__title">
+          <h2>sobre nosotros</h2>
+        </div>
+        <div class="nosotros__contenedor__dev scrollflow -pop -opacity">
+          <div class="nosotros__contenedor__dev__description">
+            <p>Somos una empresa dinámica y versátil de origen Huilense, con el objetivo de ofrecer e implementar distintas alternativas tecnológicas e innovadoras para hacer Mercadeo y Publicidad.</p>
+          </div>
+          <div class="nosotros__contenedor__dev__image">
+            <figure><img src="./images/nosotros.svg" alt="imageNosotros"/></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="id-3">
+      <div class="servicios__contenedor">
+        <div class="mepscloud">
+          <div class="title__mepscloud">
+            <h2>mep's cloud</h2>
+          </div>
+          <div class="servicio__container scrollflow -pop -opacity">
+            <div class="image__mepscloud">
+              <figure><img src="./images/mepscloud.svg" alt="image"/></figure>
+            </div>
+            <div class="servicio__container__description">
+              <div class="mepscloud__logo">
+                <figure><img src="./images/logoMC.png" alt="logo mepscloud"/></figure>
+              </div>
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dignissimos culpa dicta id itaque. Pariatur, inventore tempora porro doloribus, beatae, dolore obcaecati sentium.</p>
+                <div class="button__mc"><a href="https://mepscloud.com" target="_blank">
+                    <button>ver más</button></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="desarrollo" id="id-4">
+          <div class="title__desarrollo">
+            <h2>desarrollo de software</h2>
+          </div>
+          <div class="servicio__container scrollflow -pop -opacity">
+            <div class="image__desarrollo">
+              <figure><img src="./images/dev.svg" alt="desarrollo software"/></figure>
+            </div>
+            <div class="servicio__container__description">
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dignissimos culpa dicta id itaque. Pariatur, inventore tempora porro doloribus, beatae, dolore obcaecati sentium.</p>
+                <div class="button"><a href="trabajos.html">
+                    <button>ver más</button></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="creatividad" id="id-5">
+          <div class="title__creatividad">
+            <h2>creatividad y estrategia</h2>
+          </div>
+          <div class="servicio__container scrollflow -pop -opacity">
+            <div class="image__creatividad">
+              <figure><img src="./images/creatividad.svg" alt="image"/></figure>
+            </div>
+            <div class="servicio__container__description">
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dignissimos culpa dicta id itaque. Pariatur, inventore tempora porro doloribus, beatae, dolore obcaecati sentium.</p>
+                <div class="button"><a href="creatividad.html">
+                    <button>ver más</button></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mppromocionales" id="id-6">
+          <div class="title__mppromocionales">
+            <h2>articulos promocionales</h2>
+          </div>
+          <div class="servicio__container scrollflow -pop -opacity">
+            <div class="image__mppromocionales">
+              <figure><img src="./images/articulospromocionales.svg" alt="image"/></figure>
+            </div>
+            <div class="servicio__container__description">
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dignissimos culpa dicta id itaque. Pariatur, inventore tempora porro doloribus, beatae, dolore obcaecati sentium.</p>
+                <div class="button"><a href="http://www.mppromocionales.com/index.php?microsite=meps" target="_blank">
+                    <button>ver más</button></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="publipan" id="id-7">
+          <div class="title__publipan">
+            <h2>publipan huila</h2>
+          </div>
+          <div class="servicio__container scrollflow -pop -opacity">
+            <div class="image__publipan">
+              <figure><img src="./images/publipan.svg" alt="image"/></figure>
+            </div>
+            <div class="servicio__container__description">
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dignissimos culpa dicta id itaque. Pariatur, inventore tempora porro doloribus, beatae, dolore obcaecati sentium.</p>
+                <div class="button"><a href="publipan.html">
+                    <button>ver más</button></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="id-8">
+      <div class="clientes">
+        <div class="clientes__title">
+          <h2>ellos confian en nosotros</h2>
+        </div>
+        <div class="clientes__items scrollflow -pop -opacity">
+          <div class="clientes__items__logo">
+            <figure><img src="./images/reindustrias.png" alt="logo"/></figure>
+          </div>
+          <div class="clientes__items__logo">
+            <figure><img src="./images/camara-de-comercio.png" alt="logo"/></figure>
+          </div>
+          <div class="clientes__items__logo">
+            <figure><img src="./images/uros.png" alt="logo"/></figure>
+          </div>
+          <div class="clientes__items__logo">
+            <figure><img src="./images/coonfie.png" alt="logo"/></figure>
+          </div>
+          <div class="clientes__items__logo">
+            <figure><img src="./images/comfamiliar.png" alt="logo"/></figure>
+          </div>
+          <div class="clientes__items__logo">
+            <figure><img src="./images/fenalco.png" alt="logo"/></figure>
+          </div>
+          <div class="clientes__items__logo">
+            <figure><img src="./images/epn.png" alt="logo"/></figure>
+          </div>
+          <div class="clientes__items__logo">
+            <figure><img src="./images/cootranshuila.png" alt="logo"/></figure>
+          </div>
+          <div class="clientes__items__logo">
+            <figure><img src="./images/caesca.png" alt="logo"/></figure>
+          </div>
+          <div class="clientes__items__logo">
+            <figure><img src="./images/oftalmolaser.svg" alt="logo"/></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="id-9">
+      <div class="triangle__contenedor">
+        <div class="triangle__contenedor__float">
+          <div class="triangle__contenedor__float__triangle"></div>
+        </div>
+        <div class="triangle__content">
+          <div class="triangle__title">
+            <h2> Lorem ipsum dolor sit amet</h2>
+          </div>
+          <div class="triangle__contenedor__dev">
+            <div class="triangle__contact scrollflow -pop -opacity"><a href="javascript:desplegar('block');">
+                <button>contáctenos</button></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footer__info__contenedor"> 
+          <div class="footer__info__contenedor__items">
+            <div class="items"><i class="fa fa-map-marker"></i>
+              <p>Cll 11 #7-39 Edif fenalco ofi - 304</p>
+            </div>
+            <div class="items"><i class="fa fa-mobile"></i>
+              <p>315 586 2421</p>
+            </div>
+            <div class="items"><i class="fa fa-whatsapp"></i>
+              <p>+57 315 586 2421</p>
+            </div>
+            <div class="items"><i class="fa fa-envelope"></i>
+              <p>contacto@meps.com.co  </p>
+            </div>
+          </div>
+          <div class="footer__socialmedia">
+            <div class="footer__socialmedia__items"><i class="fa fa-facebook"></i></div>
+            <div class="footer__socialmedia__items"><i class="fa fa-twitter"></i></div>
+            <div class="footer__socialmedia__items"><i class="fa fa-instagram"></i></div>
+            <div class="footer__socialmedia__items"><i class="fa fa-youtube-play"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__derechos">
+        <p>copyright &copy; 2016</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/clientes.js"></script>
+    <script src="./js/formulario.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/eskju.jquery.scrollflow.js"></script>
+  </body>
+</html>

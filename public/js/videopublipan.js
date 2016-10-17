@@ -1,0 +1,1 @@
+function videopub(e){document.getElementById("bgvideo").style.display=e,$(document).on("keydown",function(e){27==e.which&&(document.getElementById("bgvideo").style.display="none")})}

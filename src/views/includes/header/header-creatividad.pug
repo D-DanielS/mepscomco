@@ -1,0 +1,29 @@
+#bgventana
+    #ventana
+        a(href="javascript:desplegar('none');") Cerrar
+        form
+            label nombre
+            input(type="text" name="name" autofocus="autofocus" required)
+            label correo electrónico
+            input(type="email" name="mail" required)
+            label teléfono
+            input(type="tel" maxlength="10")
+            label mensaje
+            textarea#mensaje(name="", cols="30", rows="10" required)
+
+            .politica__datos
+                input(type="checkbox" required)
+                p Aceptas las condiciones y confirmas nuestra <a href="./pdf/politicas-de-tratamiento-de-la-informacion.pdf"  download="PoliticaDatos">Política de datos. </a>
+            .button
+                button enviar
+
+
+
+
+
+.contenedor__header__creatividad
+    .contenedor__header__creatividad__img
+        figure
+            img(src="./images/ciudad-header.svg", alt="img")
+    .contenedor__header__creatividad__float
+        .contenedor__header__creatividad__float__triangle

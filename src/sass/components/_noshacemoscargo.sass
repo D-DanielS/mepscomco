@@ -1,0 +1,40 @@
+.noshacemoscargo
+    &__title
+        width: 90%
+        margin: 0 auto
+        padding-top: 2.2em
+        .subtitle
+            @extend %subtitlePublipan
+            font-weight: 200
+
+    &__content
+        width: 90%
+        margin: 0 auto
+        &__items
+            &:last-child
+                >figure
+                    width: 320px
+                    padding-top: 2em
+                    padding-bottom: 1.3em
+            >h2
+                @extend %titlePublipan
+                font-size: responsive 18px 20px
+                color: $gris
+                padding-bottom: 1.5em
+
+            >figure
+                width: 280px
+                @extend %image
+            >figcaption
+                padding-top: 1em
+                @extend %parrafo
+                color: $gris
+                font-size: responsive 18px 19px
+                text-align: center
+            
+                
+
+    .hr
+        width: 90%
+        margin: 0 auto
+        padding: 2em 0

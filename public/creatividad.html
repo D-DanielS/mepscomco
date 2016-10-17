@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Mep´s S.A.S</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png"/>
+    <link rel="manifest" href="./images/manifest.json"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+  </head>
+  <body>
+    <nav>
+      <div class="menu__movil"><a class="menu__movil__main" href="index.html"><img src="./images/logoWhite.png" alt="logo"/></a><i class="fa fa-bars fa-2x iconMenu" id="iconMenu"></i></div>
+      <ul class="menu menu__index" id="menu">
+        <li class="menu__item"><a class="menu__item__link" href="index.html">inicio</a></li>
+        <li class="menu__item"><a class="menu__item__link" href="trabajos.html">trabajos</a></li>
+        <li class="menu__item"><a class="menu__item__link" href="publipan.html">publipan    </a></li>
+        <li class="menu__item contacto"><a class="menu__item__link" href="javascript:desplegar('block');">contacto</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div id="bgventana">
+        <div id="ventana"><a href="javascript:desplegar('none');">Cerrar</a>
+          <form>
+            <label>nombre</label>
+            <input type="text" name="name" autofocus="autofocus" required="required"/>
+            <label>correo electrónico</label>
+            <input type="email" name="mail" required="required"/>
+            <label>teléfono</label>
+            <input type="tel" maxlength="10"/>
+            <label>mensaje</label>
+            <textarea id="mensaje" name="" cols="30" rows="10" required="required"></textarea>
+            <div class="politica__datos">
+              <input type="checkbox" required="required"/>
+              <p>Aceptas las condiciones y confirmas nuestra <a href="./pdf/politicas-de-tratamiento-de-la-informacion.pdf"  download="PoliticaDatos">Política de datos. </a></p>
+            </div>
+            <div class="button">
+              <button>enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="contenedor__header__creatividad">
+        <div class="contenedor__header__creatividad__img">
+          <figure><img src="./images/ciudad-header.svg" alt="img"/></figure>
+        </div>
+        <div class="contenedor__header__creatividad__float">
+          <div class="contenedor__header__creatividad__float__triangle"></div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="creatividad">
+        <div class="creatividad__title">
+          <h2>creatividad y estrategia</h2>
+        </div>
+        <div class="creatividad__description">
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum magni reprehenderit necessitatibus minima laborum inventore odio neque nemo, dolorem ratione?</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="diseno__title"> 
+        <h2>diseño grafico</h2>
+      </div>
+      <div class="acordeon">
+        <div class="acordeon__contenedor">
+          <div class="acordeon__contenedor__title">
+            <h2>campañas</h2>
+          </div>
+          <div class="acordeon__contenedor__item">
+            <div class="items">
+              <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+            </div>
+            <div class="items">
+              <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+            </div>
+            <div class="items">
+              <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+            </div>
+            <div class="items">
+              <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+            </div>
+          </div>
+        </div>
+        <div class="acordeon__contenedor">
+          <div class="acordeon__contenedor__title">
+            <h2>portafolios</h2>
+          </div>
+          <div class="acordeon__contenedor__item">
+            <div class="items">
+              <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+            </div>
+            <div class="items">
+              <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+            </div>
+            <div class="items">
+              <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+            </div>
+            <div class="items">
+              <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+            </div>
+          </div>
+        </div>
+        <div class="acordeon__contenedor">
+          <div class="acordeon__contenedor__title">
+            <h2>publipan</h2>
+          </div>
+          <div class="acordeon__contenedor__item">
+            <div class="items">
+              <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+            </div>
+            <div class="items">
+              <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+            </div>
+            <div class="items">
+              <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+            </div>
+            <div class="items">
+              <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__links"><a href="#seccion-1">Campañas</a><a href="#seccion-2">Portafolios</a><a href="#seccion-3">Publipan</a></div>
+      <div class="tabs__contents">
+        <div class="tabs__contents__item" id="seccion-1">
+          <p>title 1</p>
+          <div class="item">
+            <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+          </div>
+        </div>
+        <div class="tabs__contents__item" id="seccion-2">
+          <p>title 2</p>
+          <div class="item">
+            <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+          </div>
+        </div>
+        <div class="tabs__contents__item" id="seccion-3">
+          <p>title 3</p>
+          <div class="item">
+            <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+          </div>
+          <div class="item">
+            <figure><img src="./images/200-200.jpg" alt="image"/></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="interfaz">
+        <div class="interfaz__title">
+          <h2> Diseño de Interfaces </h2>
+        </div>
+        <div class="interfaz__description">
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe obcaecati illum temporibus, esse, sapiente aut id laudantium in sit expedita!</p>
+        </div>
+        <div class="interfaz__contenedor">
+          <div class="interfaz__items">
+            <figure><img src="./images/100.jpg" alt="image"/></figure>
+            <figcaption>rwd</figcaption>
+          </div>
+          <div class="interfaz__items">
+            <figure><img src="./images/100.jpg" alt="image"/></figure>
+            <figcaption>rwd</figcaption>
+          </div>
+          <div class="interfaz__items">
+            <figure> <img src="./images/100.jpg" alt="image"/></figure>
+            <figcaption>rwd</figcaption>
+          </div>
+        </div>
+        <div class="interfaz__contenedor__image">
+          <div class="interfaz__contenedor__image__web">
+            <figure><img src="./images/400-300.jpg" alt="image"/></figure>
+          </div>
+          <div class="interfaz__contenedor__image__movil">
+            <figure><img src="./images/400-300.jpg" alt="image"/></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="interfaz__app"> 
+        <div class="interfaz__app__title">
+          <h2> Lorem ipsum dolor sit amet.</h2>
+        </div>
+        <div class="interfaz__app__container">
+          <div class="app__item">
+            <figure><img src="./images/100.jpg" alt="image"/></figure>
+            <figcaption>color</figcaption>
+          </div>
+          <div class="app__item">
+            <figure><img src="./images/100.jpg" alt="image"/></figure>
+            <figcaption>tipografia</figcaption>
+          </div>
+          <div class="app__item">
+            <figure><img src="./images/100.jpg" alt="image"/></figure>
+            <figcaption>ui/ux</figcaption>
+          </div>
+        </div>
+        <div class="interfaz__app__phone">
+          <div class="phone">
+            <figure><img src="./images/200-300.jpg" alt="image"/></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="triangle__contenedor">
+        <div class="triangle__contenedor__float">
+          <div class="triangle__contenedor__float__triangle"></div>
+        </div>
+        <div class="triangle__content">
+          <div class="triangle__title">
+            <h2> Lorem ipsum dolor sit amet</h2>
+          </div>
+          <div class="triangle__contenedor__dev">
+            <div class="triangle__contact scrollflow -pop -opacity"><a href="javascript:desplegar('block');">
+                <button>contáctenos</button></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footer__info__contenedor"> 
+          <div class="footer__info__contenedor__items">
+            <div class="items"><i class="fa fa-map-marker"></i>
+              <p>Cll 11 #7-39 Edif fenalco ofi - 304</p>
+            </div>
+            <div class="items"><i class="fa fa-mobile"></i>
+              <p>315 586 2421</p>
+            </div>
+            <div class="items"><i class="fa fa-whatsapp"></i>
+              <p>+57 315 586 2421</p>
+            </div>
+            <div class="items"><i class="fa fa-envelope"></i>
+              <p>contacto@meps.com.co  </p>
+            </div>
+          </div>
+          <div class="footer__socialmedia">
+            <div class="footer__socialmedia__items"><i class="fa fa-facebook"></i></div>
+            <div class="footer__socialmedia__items"><i class="fa fa-twitter"></i></div>
+            <div class="footer__socialmedia__items"><i class="fa fa-instagram"></i></div>
+            <div class="footer__socialmedia__items"><i class="fa fa-youtube-play"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__derechos">
+        <p>copyright &copy; 2016</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/formulario.js"></script>
+    <script src="./js/acordion.js">   </script>
+    <script src="./js/clientes.js">                   </script>
+    <script src="./js/eskju.jquery.scrollflow.js"></script>
+  </body>
+</html>

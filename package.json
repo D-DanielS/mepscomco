@@ -1,0 +1,30 @@
+{
+  "name": "mepscomco",
+  "version": "3.0.0",
+  "description": "diseño version 3 de meps.com.co",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://D-JuanLizcano@bitbucket.org/D-JuanLizcano/mepscomco.git"
+  },
+  "author": "meps",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/D-JuanLizcano/mepscomco#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "cssnano": "^3.7.5",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-pug": "^3.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-tinypng-compress": "^1.2.1",
+    "gulp-uglify": "^2.0.0",
+    "rucksack-css": "^0.8.6"
+  }
+}

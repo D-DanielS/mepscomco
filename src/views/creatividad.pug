@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Mep´s S.A.S
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css")
+        link(href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet")
+        link(rel="stylesheet", href="./css/style.css")
+        meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+
+
+        
+        link(rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png")
+        link(rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png")
+        link(rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png")
+        link(rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png")
+        link(rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png")
+        link(rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png")
+        link(rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png")
+        link(rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png")
+        link(rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png")
+        link(rel="icon" type="image/png" sizes="192x192"  href="./images/android-icon-192x192.png")
+        link(rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png")
+        link(rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png")
+        link(rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png")
+        link(rel="manifest" href="./images/manifest.json")
+
+        meta(name="msapplication-TileColor" content="#ffffff")
+        meta(name="msapplication-TileImage" content="/ms-icon-144x144.png")
+        meta(name="theme-color" content="#ffffff")
+
+    body
+
+        nav
+            include ./includes/nav/nav.pug
+
+        header
+            include ./includes/header/header-creatividad.pug
+        section
+            include ./includes/creatividad/creatividad.pug
+        section
+            include ./includes/creatividad/diseno-grafico.pug 
+        section
+            include ./includes/creatividad/interfaces.pug 
+        section
+            include ./includes/creatividad/apps.pug 
+        section
+            include ./includes/contacto/contacto.pug
+
+        footer
+            include ./includes/footer/footer.pug
+ 
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js")
+        script(src="./js/menu.js")
+        script(src="./js/formulario.js")
+        script(src="./js/acordion.js")    
+        script(src="./js/clientes.js")                    
+        script(src="./js/eskju.jquery.scrollflow.js")

@@ -1,0 +1,203 @@
+.servicios__contenedor
+    width: 100%
+    .mepscloud
+        background: $bg-mepscloud
+        @include widthHeight(100% , 100vh)
+        padding-top: 4em
+        padding-bottom: 4em
+        overflow: hidden
+        .title__mepscloud
+            padding-bottom: 3em 
+            >h2
+                @extend %titulos
+                color: $blanco
+
+        &__logo
+            figure
+                width: 80px
+                @extend %image
+                >figcaption
+                    width: 130px
+                    margin-left: -.6em
+                    >p
+                        @extend %parrafoIndex
+                        color: $blanco
+
+
+        .servicio__container
+            .image__mepscloud
+                padding-bottom: 2em
+                width: 90%
+                margin: 0 auto
+                >figure
+                    width: 300px
+                    @extend %image
+
+            &__description
+                .description
+                    padding-top: 1.5em
+                    >p
+                        @extend %parrafoIndex
+                        width: 95%
+                        color: $blanco
+
+                    .button__mc
+                        
+                        @include mainCenter
+                        >a
+                            padding: 2em 0
+                            text-align: center
+                            >button
+                                @include button(transparent, $blanco)
+                                &:hover
+                                    color: $color-mepscloud
+
+
+    .creatividad,
+    .desarrollo,
+    .publipan,
+    .mppromocionales,
+    .marketing
+        height: 100vh
+        overflow: hidden
+        .title
+            &__creatividad,
+            &__desarrollo,
+            &__publipan,
+            &__mppromocionales,
+            &__marketing
+                >h2
+                    @extend %titulos
+                    padding: 1.5em 0
+
+
+
+        .servicio__container
+            .image
+                &__creatividad,
+                &__desarrollo,
+                &__publipan,
+                &__mppromocionales,
+                &__marketing
+                    width: 90%
+                    margin: 0 auto
+                    >figure
+                        width: 300px
+                        padding: 1.5em 0
+                        @extend %image
+
+                &__publipan
+                    >figure
+                        width: 200px
+
+
+
+            &__description
+                .description
+                    @extend %parrafoIndex
+                    width: 95%
+                    padding-top: .2em
+
+                    .button
+                        @include mainCenter
+                        >a
+                            padding-top: 2em
+                            text-align: center
+                            >button
+                                @include button(transparent, $blanco)
+                                &:hover
+                                    background: $blanco
+
+
+    .creatividad
+        background-color: $bg-creatividad 
+        padding: 4em 0
+        .servicio__container
+            &__description
+                @extend %parrafoIndex
+                width: 95%
+                .button
+                    @include mainCenter
+                    >a
+                        text-align: center
+                        padding: 2em 0
+                        outline: none !important
+                        >button
+                            @include button(transparent, $blanco)
+                            &:hover
+                                background: $blanco
+                                color: $color-creatividad
+
+
+    .desarrollo
+        background: $bg-dev
+        padding: 4em 0
+        .servicio__container
+            &__description
+                @extend %parrafoIndex
+                width: 95%
+                .button
+                    @include mainCenter
+                    >a
+                        text-align: center
+                        padding: 2em 0
+                        >button
+                            @include button(transparent, $blanco)
+                            &:hover
+                                background: $blanco
+                                color: $color-dev
+
+    .publipan
+        background: $bg-publipan
+        padding: 4em 0
+        .servicio__container
+            &__description
+                @extend %parrafoIndex
+                width: 95%
+                .button
+                    @include mainCenter
+                    >a
+                        text-align: center
+                        padding: 2em 0
+                        >button
+                            @include button(transparent, $blanco)
+                            &:hover
+                                background: $blanco
+                                color: $color-publipan
+
+    .mppromocionales
+        background: $bg-articulos
+        padding: 4em 0
+        .servicio__container
+            &__description
+                @extend %parrafoIndex
+                width: 95%
+                .button
+                    @include mainCenter
+                    >a
+                        text-align: center
+                        padding: 2em 0
+                        >button
+                            @include button(transparent, $blanco)
+                            &:hover
+                                background: $blanco
+                                color: $color-articulos
+
+    .marketing
+        display: none !important
+        background: $bg-marketing
+        padding: 4em 0   
+        .servicio__container
+            &__description
+                @extend %parrafoIndex
+                width: 95%
+                .button
+                    @include mainCenter
+                    >a
+                        text-align: center
+                        padding: 2em 0
+                        >button
+                            @include button(transparent, $blanco)
+                            &:hover
+                                background: $blanco
+                                color: $color-marketing

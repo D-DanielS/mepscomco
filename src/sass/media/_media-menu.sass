@@ -1,0 +1,64 @@
+@include mediaMin(1024)
+    nav 
+        @include mainJustify
+        flex-wrap: nowrap
+        width: 100%
+        margin: 0 auto
+
+        .menu__movil
+            width: 100%
+            &__main
+                display: flex
+                height: 70px
+                >img
+                    max-height: 100%
+
+            .iconMenu
+                display: none !important
+
+
+
+        .menu
+            position: static
+            @include mainDistribute
+            flex-direction: row
+            height: 70px
+            margin-right: 3em
+            
+            &__item
+                box-shadow: none
+                background: none
+                border: 1px solid transparent
+                border-radius: 20px
+                transition: .3s all
+                margin: 0 .2em
+                &:hover
+                    box-shadow: none
+                    border: 1px solid $blanco
+    
+                &__link
+                    line-height: 2
+                    font-weight: normal
+                    font-size: 14px
+
+            .contacto
+                background: $carmin
+                border-radius: 20px
+                transition: .2s all
+                border: none !important
+                &:hover
+                    background: $blanco
+                    >a 
+                        color: darken($carmin,5)
+                        font-weight:  normal          
+                >a 
+                    &:hover
+                        border-bottom: none !important
+                        font-weight: bold
+                   
+               
+
+        .menu__index
+            padding: 0 2.5em
+            >li 
+                margin: 0 .4em !important

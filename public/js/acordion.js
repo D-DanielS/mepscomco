@@ -1,0 +1,1 @@
+$(".acordeon").on("click",".acordeon__contenedor__title",function(){var e=$(this),o=e.next(),s=$(".acordeon__contenedor__item");"active"===o[0].classList[o[0].classList.length-1]?(o.slideToggle(),o[0].classList.remove("active")):(o.addClass("active"),s.slideUp(),o.slideToggle())});

@@ -1,0 +1,46 @@
+.contenedor__header__ds
+    @include widthHeight(100%, 560px)
+    background: $header-index
+    position: relative
+
+    &__img
+        padding-top: 6.5em
+        >figure
+            width: 300px
+            @extend %image
+
+        .header__title
+            padding-top: 1em
+            text-align: center
+            >h2
+                @extend %titulos
+                letter-spacing: 5px
+                color: $blanco
+
+            >p
+
+                @extend %parrafo
+                letter-spacing: 1px
+                padding-top: .4em
+                color: $blanco
+
+
+
+    &__float
+        @include widthHeight(100%, 120px)
+        background: transparent
+
+        position: absolute
+        bottom: -1px
+        left: 0
+        right: 0
+
+        z-index: 2
+        overflow: hidden
+
+        @include mainCenter
+
+        &__triangle
+            border-left: 800px solid $blanco
+            border-right: 800px solid $blanco
+            border-top: 120px solid rgba($header-triangle,.2)

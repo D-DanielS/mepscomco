@@ -1,0 +1,1 @@
+function desplegar(n){document.getElementById("bgventana").style.display=n,$(document).on("keydown",function(n){27==n.which&&(document.getElementById("bgventana").style.display="none")})}function formPublipan(n){document.getElementById("modal").style.display=n,$(document).on("keydown",function(n){27==n.which&&(document.getElementById("modal").style.display="none")})}

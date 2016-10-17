@@ -1,0 +1,27 @@
+.ventajas
+    &__title
+        .subtitle
+            @extend %subtitlePublipan
+            font-weight: 200
+    &__content
+        width: 90%
+        margin: 0 auto
+        &__items
+            margin: 2.5em auto
+            >figure
+                width: 180px
+                @extend %image
+
+
+            >figcaption
+                @extend %parrafo
+                color: $gris
+                text-align: center
+                padding-top: 1em
+                font-size: responsive 18px 19px
+                margin: .5em 
+            
+            &:last-child
+                >figcaption
+                    padding-top: .5em
+

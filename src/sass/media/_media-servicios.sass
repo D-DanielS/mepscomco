@@ -1,0 +1,388 @@
+@include mediaMax(480)
+    .servicios__contenedor
+        .mepscloud
+            .title__mepscloud
+                padding-top: 2em
+                padding-bottom: 0
+            .servicio__container
+                width: 90%
+                margin: 0 auto
+                .image__mepscloud
+                    >figure
+                        display: none
+
+        .desarrollo
+            .title__desarrollo
+                padding-top: 2em
+                padding-bottom: 0
+            .servicio__container
+                width: 90%
+                margin: 0 auto
+                .image__desarrollo
+                    >figure
+                        display: none
+        .creatividad
+            .title__creatividad
+                padding-top: 1em
+                padding-bottom: 0
+            .servicio__container
+                width: 90%
+                margin: 0 auto
+                .image__creatividad
+                    >figure
+                        display: none
+
+        .mppromocionales
+            .title__mppromocionales
+                padding-top: 2em 
+                padding-bottom: 0
+            .servicio__container
+                width: 90%
+                margin: 0 auto
+                .image__mppromocionales
+                    >figure
+                        display: none
+
+
+        .publipan
+            .title__publipan
+                padding-top: 2em 
+                padding-bottom: 0
+            .servicio__container
+                width: 90%
+                margin: 0 auto
+                .image__publipan
+                    >figure
+                        display: none
+
+
+
+@include mediaMin(640)
+    .servicios__contenedor
+        .mepscloud
+            .title__mepscloud
+                padding-top: 1.5em
+                padding-bottom: 1em
+            .servicio__container
+                width: 90%
+                margin: 0 auto
+                .image__mepscloud
+                    >figure
+                        width: 250px
+                &__description
+                    .mepscloud__logo
+                        >figure
+                            display: none
+                    .description
+                        padding-top: 0
+
+        .desarrollo
+            .title__desarrollo
+                padding-top: 2em
+                >h2
+                    padding: 0
+            .servicio__container
+                width: 90%
+                margin: 0 auto
+                .image__desarrollo
+                    >figure
+                        width: 220px
+                        padding-bottom: 0
+
+
+
+        .creatividad
+            .title__creatividad
+                padding-top: 2em
+                >h2
+                    padding: 0
+            .servicio__container
+                width: 90%
+                margin: 0 auto
+                .image__creatividad
+                    >figure
+                        width: 280px
+                        padding-bottom: 0
+
+        .mppromocionales
+            .title__mppromocionales
+                padding-top: 2em
+                >h2
+                    padding: 0
+            .servicio__container
+                width: 90%
+                margin: 0 auto
+                .image__mppromocionales
+                    >figure
+                        width: 250px
+                        padding-bottom: 0
+
+        .publipan
+            .title__publipan
+                padding-top: 2em
+                >h2
+                    padding: 0
+            .servicio__container
+                width: 90%
+                margin: 0 auto
+                .image__publipan
+                    >figure
+                        width: 160px
+                        padding-bottom: 0
+
+
+
+
+@include mediaMin(768)
+    .servicios__contenedor
+        .mepscloud
+            .servicio__container
+                &__description
+                    .description
+                        width: 90%
+                        margin: 0 auto
+                        >p
+                            width: 80%
+
+
+
+        .creatividad,
+        .desarrollo,
+        .mppromocionales,
+        .publipan,
+        .marketing
+            .servicio__container
+                &__description
+                    .description
+                        >p
+                            width: 80%
+                            margin: 0 auto
+
+
+@include mediaMin(1025)
+    .servicios__contenedor
+        .mepscloud
+            .servicio__container
+                @include mainJustify
+                flex-wrap: nowrap
+                padding: 2em 0
+                width: 100%
+                margin: 0 auto
+                &__description
+                    width: 100%
+                    .mepscloud__logo
+                        padding-bottom: 2em
+                        >figure
+                            display: block
+                    .description
+                        margin: 0 auto
+                        >p
+                            width: 100%
+                .image__mepscloud
+                    >figure
+                        width: 400px
+
+
+        .creatividad,
+        .desarrollo,
+        .mppromocionales,
+        .publipan,
+        .marketing
+            .servicio__container
+                @include mainCenter
+                flex-wrap: nowrap
+                width: 90%
+                margin: 0 auto
+                &__description
+                    order: 1
+                    .description
+                        padding-top: 5em
+                        >p
+                            width: 100%
+                            margin: 0 auto
+
+                .image__creatividad
+                    order: 2
+                    >figure
+                        width: 430px
+
+        .creatividad
+            .title__creatividad
+                padding-bottom: 3em
+                
+        .desarrollo
+            .servicio__container
+                .image__desarrollo
+                    >figure
+                        width: 400px
+
+
+        .publipan
+            .title__publipan
+                padding-bottom: 2em
+
+            .servicio__container
+                .image__publipan
+                    >figure
+                        width: 250px
+
+
+        .mppromocionales
+            .servicio__container
+                .image__mppromocionales
+                    order: 2
+                    >figure
+                        width: 400px
+
+                &__container
+                    order: 1
+
+
+        .marketing
+            padding-bottom: 2em
+            .title__marketing
+                padding-bottom: 2em
+
+            .servicio__container
+                .image__marketing
+                    >figure
+                        width: 360px
+
+
+
+
+
+
+@include mediaMin(1200)
+    .servicios__contenedor
+        .mepscloud
+            .servicio__container
+                width: 80%
+                margin: 0 auto
+                &__description
+                    width: 100%
+                    .description
+                        margin: 0 auto
+                        >p
+                            width: 100%
+                .image__mepscloud
+
+                    >figure
+                        width: 500px
+
+
+        .creatividad,
+        .desarrollo,
+        .mppromocionales,
+        .publipan,
+        .marketing
+            height: 100vh
+
+
+        .creatividad
+
+            .servicio__container
+                padding-top: 3em
+                width: 80%
+                margin: 0 auto
+                .image__creatividad
+                    >figure
+                        width: 490px
+        .desarrollo
+            .servicio__container
+                .image__desarrollo
+                    >figure
+                        width: 450px
+
+
+        .publipan
+            .servicio__container
+                .image__publipan
+                    >figure
+                        width: 330px
+
+
+        .mppromocionales
+            .servicio__container
+                .image__mppromocionales
+
+                    >figure
+                        width: 470px
+
+
+
+
+        .marketing
+            .servicio__container
+                padding-top: 1em
+                .image__marketing
+                    >figure
+                        width: 390px
+
+
+
+@include mediaMin(1400)
+    .servicios__contenedor
+        .mepscloud
+            .servicio__container
+                width: 80%
+                margin: 0 auto
+                &__description
+                    width: 100%
+                    .description
+                        margin: 0 auto
+                        >p
+                            width: 100%
+                .image__mepscloud
+
+                    >figure
+                        width: 600px
+
+
+        .creatividad,
+        .desarrollo,
+        .mppromocionales,
+        .publipan,
+        .marketing
+            height: 100vh
+
+
+        .creatividad
+
+            .servicio__container
+                padding-top: 3em
+                width: 80%
+                margin: 0 auto
+                .image__creatividad
+                    >figure
+                        width: 580px
+        .desarrollo
+            .servicio__container
+                .image__desarrollo
+                    >figure
+                        width: 550px
+
+
+        .publipan
+            .servicio__container
+                .image__publipan
+                    >figure
+                        width: 400px
+
+
+        .mppromocionales
+            .servicio__container
+                .image__mppromocionales
+
+                    >figure
+                        width: 520px
+
+
+
+
+        .marketing
+            .servicio__container
+                padding-top: 1em
+                .image__marketing
+                    >figure
+                        width: 390px

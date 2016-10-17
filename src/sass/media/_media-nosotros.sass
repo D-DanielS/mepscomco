@@ -1,0 +1,101 @@
+@include mediaMax(400)
+    .nosotros__contenedor
+        &__title
+            padding-top: 5em
+        &__dev
+            width: 90%
+            margin: 0 auto
+            &__description
+                width: 95%
+                margin: 0 auto
+                padding-top: 2em
+            &__image
+                >figure
+                    display: none 
+
+
+
+
+
+
+
+@include mediaMin(480)
+    .nosotros__contenedor
+        &__dev
+            width: 90%
+            margin: 0 auto
+            &__description
+                
+            &__image
+                >figure
+                    display: block
+                    width: 210px
+
+
+
+@include mediaMin(640)
+    .nosotros__contenedor
+        &__image
+            >figure
+                width: 270px 
+
+
+
+@include mediaMin(768)
+    .nosotros__contenedor
+        &__dev
+            &__description
+                >p 
+                    width: 80%
+
+
+
+@include mediaMin(1024)
+    .nosotros__contenedor
+        background: $bg-nosotros-l
+        height: 100vh
+        &__title
+            >h2
+                padding-top: 1em !important
+            
+        &__dev
+            @include mainDistribute
+            flex-wrap: nowrap
+            width: 90%
+            margin: 0 auto            
+            &__image
+                >figure
+                    width: 350px
+
+
+
+@include mediaMin(1200)
+    .nosotros__contenedor
+
+            
+        &__dev
+         
+            &__image
+                >figure
+                    width: 370px
+
+
+
+@include mediaMin(1400)
+    .nosotros__contenedor
+
+            
+        &__dev
+         
+            &__image
+                >figure
+                    width: 480px
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+@include mediaMin(480)
+    .creatividad
+        &__title
+            padding-top: 4em
+    .acordeon
+        &__contenedor
+            border: 1px solid blue 
+            &__item
+                border: 1px solid red 
+                .items
+                    >figure
+                        width: 230px
+
+
+@include mediaMin(640)
+
+    .acordeon
+        &__contenedor
+            border: 1px solid blue 
+            &__item
+                border: 1px solid red 
+                .items
+                    >figure
+                        width: 240px
+
+
+@include mediaMin(768)
+    
+    .creatividad
+        &__description
+            width: 80%
+            margin: 0 auto
+
+    .acordeon
+        width: 80%
+        margin: 0 auto
+        &__title
+            >h2
+                margin: 0 2em
+        &__contenedor
+            border: 1px solid blue 
+
+        
+    .interfaz
+        &__description
+            width: 80%
+            margin: 0 auto
+
+        &__contenedor
+            border: 1px solid red 
+            width: 80%
+            margin: 0 auto
+
+            
+            &__image
+                display: flex
+                border: 1px solid green 
+                align-items: center
+
+        
+        &__app
+            &__container
+                border: 1px solid red 
+                width: 80%
+                margin: 0 auto
+            &__phone
+                border: 1px solid blue 
+                width: 80%
+                margin: 2em auto
+
+@include mediaMax(1024)
+    .tabs
+        &__links,
+        &__contents
+            display: none  
+              
+@include mediaMin(1024)
+    .acordeon
+        display: none

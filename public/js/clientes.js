@@ -1,0 +1,1 @@
+var linksParent=$(".tabs__links"),links=linksParent.find("a"),items=$(".tabs__contents__item");links.eq(0).add(items.eq(0)).addClass("active"),linksParent.on("click","a",function(){var s=$(this),i=s.index();s.add(items.eq(i)).addClass("active").siblings().removeClass("active")});

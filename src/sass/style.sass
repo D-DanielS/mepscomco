@@ -1,0 +1,153 @@
+@import 'components/variables'
+@import 'components/reset'
+@import 'components/base'
+@import 'components/flexbox'
+@import 'components/media-queries'
+
+@import 'mixins/mixins';
+@import 'components/helper'
+
+@import 'components/scroll'
+
+@import 'components/nav'
+
+@import 'components/header'
+@import 'components/header-publipan'
+@import 'components/header-trabajos'
+@import 'components/header-creatividad'
+
+
+
+@import 'components/footer'
+@import 'components/nosotros'
+@import 'components/servicios'
+@import 'components/clientes'
+@import 'components/triangleContacto'
+
+/*creatividad*/
+@import 'components/creatividad'
+@import 'components/interfaces'
+
+
+
+/*publipan*/
+
+@import 'components/queespublipan'
+@import 'components/comofunciona'
+@import 'components/noshacemoscargo'
+@import 'components/ventajas'
+@import 'components/historia'
+@import 'components/patente'
+@import 'components/videos'
+@import 'components/bolsasgratis'
+
+/*trabajos*/
+@import 'components/web'
+@import 'components/movil'
+
+
+
+/*media*/
+@import 'media/media-menu'
+@import 'media/media-header'
+@import 'media/media-nosotros'
+@import 'media/media-servicios'
+@import 'media/media-clientes'
+@import 'media/media-contacto'
+@import 'media/media-footer'
+@import 'media/_media-trabajos.sass'
+
+
+/*publipan*/
+@import 'media/media-publipan'
+
+/*creatividad*/
+@import 'media/media-estrategia'
+
+
+.diseno__title 
+    padding: 1em 0
+    >h2 
+        @extend %titulos
+        color: $gris
+        font-weight: normal
+.acordeon
+    padding: 2em 0
+    &__contenedor
+        width: 90%
+        margin: 0 auto
+        background: rgba($gris,.04)
+        &__title
+            cursor: pointer
+            background: $bg-triangle-Contact
+            // margin: 1em 0
+            // border-radius: 50px
+            >h2 
+                text-align: center
+                text-transform: capitalize
+                line-height: 2
+                color: $blanco
+                border-bottom: 1px solid $bg-creatividad
+                font-weight: normal
+                @extend %titulos
+                
+        &__item
+            display: none
+            .items
+                margin: 1.5em 0
+                // &:first-child
+                //     margin-top: 0
+                figure
+                    @extend %image
+
+
+
+
+
+
+/*tabs web*/
+
+.tabs
+    &__links,
+    &__contents
+        width: 80%
+        margin: auto
+
+    
+    &__links
+        border: 1px solid red
+        padding-top: 2em
+        display: flex
+        justify-content: space-around
+        align-items: center
+
+        >a 
+            background: $bg-triangle-Contact
+            line-height: 5.2
+            padding: .5em
+            width: 120px
+            height: 120px
+            border: 1px solid blue
+            border-radius: 50%
+            text-align: center
+            @extend %parrafo
+            letter-spacing: 1px
+
+
+    &__contents
+        position: relative
+        &__item
+            background: #eee
+            padding: 1em
+            border_ 1px solid #bbb
+            display: none
+            width: 100%
+            
+
+            &.active
+                display: flex
+                align-items: center
+                justify-content: space-around
+    
+
+

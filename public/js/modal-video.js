@@ -1,0 +1,1 @@
+function formPublipan(n){document.getElementById("modal").style.display=n,$(document).on("keydown",function(n){27==n.which&&(document.getElementById("modal").style.display="none")})}

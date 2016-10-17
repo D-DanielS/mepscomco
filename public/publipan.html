@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Publipan Huila</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png"/>
+    <link rel="manifest" href="./images/manifest.json"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+  </head>
+  <body>
+    <nav>
+      <div class="menu__movil"><a class="menu__movil__main" href="index.html"><img src="./images/logoWhite.png" alt="logo"/></a><i class="fa fa-bars fa-2x iconMenu" id="iconMenu"></i></div>
+      <ul class="menu menu__index" id="menu">
+        <li class="menu__item"><a class="menu__item__link" href="index.html">inicio</a></li>
+        <li class="menu__item"><a class="menu__item__link" href="trabajos.html">trabajos</a></li>
+        <li class="menu__item"><a class="menu__item__link" href="publipan.html">publipan    </a></li>
+        <li class="menu__item contacto"><a class="menu__item__link" href="javascript:desplegar('block');">contacto</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div id="bgventana">
+        <div id="ventana"><a href="javascript:desplegar('none');">Cerrar</a>
+          <form>
+            <label>nombre</label>
+            <input type="text" name="name" autofocus="autofocus" required="required"/>
+            <label>correo electrónico</label>
+            <input type="email" name="mail" required="required"/>
+            <label>teléfono</label>
+            <input type="tel" maxlength="10"/>
+            <label>mensaje</label>
+            <textarea id="mensaje" name="" cols="30" rows="10" required="required"></textarea>
+            <div class="politica__datos">
+              <input type="checkbox" required="required"/>
+              <p>Aceptas las condiciones y confirmas nuestra <a href="./pdf/politicas-de-tratamiento-de-la-informacion.pdf"  download="PoliticaDatos">Política de datos. </a></p>
+            </div>
+            <div class="button">
+              <button>enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="bgvideo">
+        <div id="bgvideopublipan"><a href="javascript:videopub('none');">x</a>
+          <div class="items__video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iBW-1FDOtaI" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor__header__publipan">
+        <div class="contenedor__header__publipan__video"><a class="header__button" href="javascript:videopub('block');" id="button"><img src="./images/button.svg" alt="image"/></a></div>
+        <div class="contenedor__header__publipan__float">
+          <div class="contenedor__header__publipan__float__triangle"></div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div id="quees"></div>
+      <div class="publipan__qe">
+        <div class="publipan__qe__title">
+          <h2 class="title">¿ qué es publipan?</h2>
+          <h2 class="subtitle">Un medio de publicidad ecológico</h2>
+        </div>
+        <div class="publipan__qe__description scrollflow -pop -opacity">
+          <p>Consiste en bolsas de papel impresas con publicidad que se distribuyen gratuitamente a panaderos, tenderos y droguistas de las zonas objetivo de nuestro cliente. Publipan es la publicidad más directa, menos agresiva y más eficaz del mercado. Además de un soporte ecológico y comprometido con el medio ambiente. </p>
+        </div>
+        <div class="publipan__qe__container">
+          <div class="publipan__qe__container__subtitle">
+            <h2 class="subtitle">Es una bolsa de papel donde se sirve el pan</h2>
+          </div>
+          <div class="publipan__qe__container__info scrollflow -pop -opacity">
+            <div class="publipan__qe__container__info__image">
+              <figure><img src="./images/quees.svg" alt="image"/></figure>
+            </div>
+            <div class="publipan__qe__container__info__description">
+              <p>Consiste simplemente en aprovechar la bolsa de papel en la que habitualmente las panaderías y tiendas entregan un producto tan básico como el pan y otros productos, como nuevo medio para que los anunciantes plasmen su publicidad, con la garantía de que esta entra de la mano del consumidor final a los hogares.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="comofunciona">
+        <div class="comofunciona__title">
+          <h2 class="title">¿como funciona?</h2>
+          <h2 class="subtitle">Bolsas gratis para panaderos, tenderos y droguistas</h2>
+        </div>
+        <div class="comofunciona__info scrollflow -pop -opacity">
+          <div class="comofunciona__info__image">
+            <figure><img src="./images/comofunciona.svg" alt="image"/></figure>
+          </div>
+          <div class="comofunciona__info__description">
+            <p> Nuestra red de franquicias trabaja como agentes comerciales que ofrecen a cualquier negocio o entidad la posibilidad de contratar un espacio publicitario en en una bolsa de papel para servir el pan y otros productos secos. Esta bolsa es impresa y reptartida de forma gratuita en las panaderías, tiendas y/o droguerías de las zonas que se ha contratado. Los locales beneficiados reciben estas bolsas y las usan para empacar los productos que lleva el consumidor.</p>
+            <p>Garantizamos una publicidad efectiva.</p>
+          </div>
+          <div class="hr">
+            <hr/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="noshacemoscargo">
+        <div class="noshacemoscargo__title">
+          <h2 class="subtitle">Nosotros nos hacemos cargo de todo</h2>
+        </div>
+        <div class="noshacemoscargo__content">
+          <div class="noshacemoscargo__content__items scrollflow -pop -opacity">
+            <h2>diseño</h2>
+            <figure><img src="./images/diseño.svg" alt="image"/></figure>
+            <figcaption>En Publipan Colombia, el área de diseño se encarga de crear, maquetar y revisar las bolsas para nuestros anunciantes.</figcaption>
+          </div>
+          <div class="noshacemoscargo__content__items scrollflow -pop -opacity">
+            <h2>producción</h2>
+            <figure><img src="./images/produccion.svg" alt="image"/></figure>
+            <figcaption>En Colombia contamos con la maquinaria acorde con las necesidades para imprimir bolsas biodegradables, utilizamos tintas al agua y pegantes de almidón de yuca.</figcaption>
+          </div>
+          <div class="noshacemoscargo__content__items scrollflow -pop -opacity">
+            <h2>distribución</h2>
+            <figure><img src="./images/distribucion.svg" alt="image"/></figure>
+            <figcaption>a gran red de distribución Publipan Colombia nos permite llegar a cualquier punto para entregar su publicidad. Cada panadería, tienda o farmacia (según lo determine el cliente) recibe sus bolsas de forma gratuita y las entrega en mano a sus clientes.</figcaption>
+          </div>
+          <div class="noshacemoscargo__content__items scrollflow -pop -opacity">
+            <h2>valores agregados</h2>
+            <figure><img src="./images/valoresagregados.svg" alt="image"/></figure>
+            <figcaption>Investigación de mercados, Sampling, Perifoneo, Colocación Material P.O.P., Chequeo de Distribucón.</figcaption>
+          </div>
+        </div>
+        <div class="hr">
+          <hr/>
+        </div>
+      </div>
+      <div id="ventajas"></div>
+    </section>
+    <section>
+      <div class="ventajas">
+        <div class="ventajas__title">
+          <h2 class="subtitle">Todos son ventaja</h2>
+        </div>
+        <div class="ventajas__content">
+          <div class="ventajas__content__items scrollflow -pop -opacity">
+            <figure><img src="./images/ventajas-1.svg" alt="image"/></figure>
+            <figcaption>Los anunciantes consiguen una publicidad efectiva.</figcaption>
+          </div>
+          <div class="ventajas__content__items scrollflow -pop -opacity">
+            <figure><img src="./images/ventajas-2.svg" alt="image"/></figure>
+            <figcaption>Los panaderos y tenderos obtienen un empaque gratuíto.</figcaption>
+          </div>
+          <div class="ventajas__content__items scrollflow -pop -opacity">
+            <figure><img src="./images/ventajas-3.svg" alt="image"/></figure>
+            <figcaption>Evitamos fabricar millones de bolsas de plástico.</figcaption>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="historia">
+        <div class="historia__title">
+          <h2 class="title">historia publipan</h2>
+          <h2 class="subtitle">Desde España a más de 20 paises ...</h2>
+        </div>
+        <div class="historia__description scrollflow -pop -opacity">
+          <div class="historia__description__items">
+            <p>Publipan® nace en La Rioja (España) como formato publicitario local. El gran interés despertado y el éxito del formato propician la expansión del negocio y su establecimiento como franquicia en España en el año 2007.</p>
+          </div>
+          <div class="historia__description__items">
+            <p>En 2008, Publipan® saltó las fronteras se establece su primer master internacional en el vecino país de Portugal. El interés despertado por el formato en otros países europeos no se hizo esperar y en el año 2009 se abrió también una delegación de la marca española en Rumania.</p>
+          </div>
+          <div class="historia__description__items">
+            <p>El año 2009 también puede denominarse como el año de apertura de Publipan®en el continente americano. El primer país que se unió a la familia Publipan® fue el centroamericano Costa Rica, al que se unió a comienzos de 2010 Ecuador. Tampoco se hicieron esperar Brasil y Moldavia para completar la red de franquicias de Publipan® en todo el mundo.</p>
+          </div>
+          <div class="historia__description__items">
+            <p>Actualmente Publipan® cuenta con más de un centenar de franquiciados en su país de origen (España) y dispone de sedes en 20 países del mundo, sumando medio millar de franquiciados en todo el planeta</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="patente">
+        <div class="patente__title">
+          <h2 class="title">patente publipan</h2>
+          <h2 class="subtitle">Producto patentado</h2>
+        </div>
+        <div class="patente__info scrollflow -pop -opacity">
+          <div class="patente__info__description">
+            <p>La patente de Publipan es una patente modo de uso con número MU200501657 la cual protege de posibles plagios el uso de una bolsa de pan de papel para utilizarla como soporte publicitario en otras empresas que no sea la misma panadería. Para mas información, puede llamar al 902 15 75 30 teléfono de la Oficina Española de Patentes y Marcas.</p>
+          </div>
+        </div>
+      </div>
+      <div id="bolsas"></div>
+    </section>
+    <section>
+      <div id="modal">
+        <div id="modalventana"><a href="javascript:formPublipan('none');">Cerrar</a>
+          <form action="">
+            <div class="colum1">
+              <label>¿Cómo se llama su panadería?</label>
+              <input type="text" name="" required="required"/>
+              <label>¿En qué dirección se encuentra ubicada?</label>
+              <input type="text" name="" required="required"/>
+              <label>Barrio</label>
+              <input type="text" name="" required="required"/>
+              <label>Teléfono</label>
+              <input type="tel" maxlength="10" required="required"/>
+              <label>Municipio</label>
+              <input type="text" name="" required="required"/>
+            </div>
+            <div class="colum2">
+              <label>Tipo de establecimiento</label>
+              <select name="">
+                <option value="">tienda</option>
+                <option value="">panadería</option>
+                <option value="">droguería</option>
+              </select>
+              <label>Prodría indicarnos cuántas tiene?</label>
+              <input type="number" min="0" max="10" required="required" value="1"/>
+              <label>Cierra el establecimiento algún día por descanso semanal?</label>
+              <select name="" required="required">
+                <option value="">lunes</option>
+                <option value="">martes</option>
+                <option value="">miércoles</option>
+                <option value="">jueves</option>
+                <option value="">viernes</option>
+                <option value="">sábado</option>
+                <option value="">domingo</option>
+              </select>
+              <label>Cuántas bolsas usa por semana?</label>
+              <select name="" required="required">
+                <option value="">100 - 200</option>
+                <option value="">201 - 500</option>
+                <option value="">501 - 1.000</option>
+                <option value="">más de 1.000</option>
+              </select>
+            </div>
+            <div class="button">
+              <button>enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bolsas__triangle__contenedor">
+        <div class="bolsas__triangle__contenedor__float">
+          <div class="bolsas__triangle__contenedor__float__bolsas__triangle"></div>
+        </div>
+        <div class="bolsas__triangle__content">
+          <div class="bolsas__triangle__title">
+            <h2> ¿desea bolsas gratis?</h2>
+          </div>
+          <div class="bolsas__triangle__contenedor__dev">
+            <div class="bolsas__triangle__contact">
+              <div class="bolsas__triangle__contact__image">
+                <figure><img src="./images/contacto.svg" alt="image"/></figure>
+              </div>
+              <div class="bolsas__triangle__contact__description">
+                <p>Si tienes un local donde se dispensa pan queremos saberlo para poder enviarte bolsas gratis.</p>
+              </div>
+            </div>
+            <div class="bolsas__triangle__contenedor__dev__button"><a href="javascript:formPublipan('block');">
+                <button>Más Info >></button></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="video">
+        <div class="video__title">
+          <h2 class="title">galería de videos</h2>
+        </div>
+        <div class="video__content">
+          <div class="video__content__item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XLDKX67uRBs?list=PLeBPyuY1HlYEpnmXIP1fOJhmLIFVvD1uO" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+          </div>
+          <div class="video__content__item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vO_l9Os8Ay8" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+          </div>
+          <div class="video__content__item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0kAxqRPGydc" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+          </div>
+          <div class="video__content__item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/atfkUPxZX_c" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+          </div>
+          <div class="video__content__item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zEAC8gqf1_M" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footer__info__contenedor"> 
+          <div class="footer__info__contenedor__items">
+            <div class="items"><i class="fa fa-map-marker"></i>
+              <p>Cll 11 #7-39 Edif fenalco ofi - 304</p>
+            </div>
+            <div class="items"><i class="fa fa-mobile"></i>
+              <p>315 586 2421</p>
+            </div>
+            <div class="items"><i class="fa fa-whatsapp"></i>
+              <p>+57 315 586 2421</p>
+            </div>
+            <div class="items"><i class="fa fa-envelope"></i>
+              <p>contacto@meps.com.co  </p>
+            </div>
+          </div>
+          <div class="footer__socialmedia">
+            <div class="footer__socialmedia__items"><i class="fa fa-facebook"></i></div>
+            <div class="footer__socialmedia__items"><i class="fa fa-twitter"></i></div>
+            <div class="footer__socialmedia__items"><i class="fa fa-instagram"></i></div>
+            <div class="footer__socialmedia__items"><i class="fa fa-youtube-play"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__derechos">
+        <p>copyright &copy; 2016</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/formulario.js"></script>
+    <script src="./js/videopublipan.js">       </script>
+    <script src="./js/eskju.jquery.scrollflow.js"></script>
+  </body>
+</html>

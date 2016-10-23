@@ -1,1 +1,13 @@
-$(".acordeon").on("click",".acordeon__contenedor__title",function(){var e=$(this),o=e.next(),s=$(".acordeon__contenedor__item");"active"===o[0].classList[o[0].classList.length-1]?(o.slideToggle(),o[0].classList.remove("active")):(o.addClass("active"),s.slideUp(),o.slideToggle())});
+$('.acordeon').on('click','.acordeon__contenedor__title',function(){
+    var t = $(this);
+    var tp = t.next();
+    var items = $('.acordeon__contenedor__item');
+    if(tp[0].classList[(tp[0].classList.length - 1)] === 'active'){
+        tp.slideToggle();
+        tp[0].classList.remove('active');
+    }else{
+        tp.addClass('active');
+        items.slideUp();
+        tp.slideToggle();  
+    }
+}); 

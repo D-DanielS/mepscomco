@@ -45,7 +45,8 @@
 @import 'components/web'
 @import 'components/movil'
 
-
+/*equipo de trabajo*/
+@import 'components/equipodetrabajo'
 
 /*media*/
 @import 'media/media-menu'
@@ -65,9 +66,9 @@
 @import 'media/media-estrategia'
 
 
-.diseno__title 
-    padding: 1em 0
-    >h2 
+.diseno__title
+    padding: 2.2em 0
+    >h2
         @extend %titulos
         color: $gris
         font-weight: normal
@@ -80,9 +81,7 @@
         &__title
             cursor: pointer
             background: $bg-triangle-Contact
-            // margin: 1em 0
-            // border-radius: 50px
-            >h2 
+            >h2
                 text-align: center
                 text-transform: capitalize
                 line-height: 2
@@ -90,7 +89,7 @@
                 border-bottom: 1px solid $bg-creatividad
                 font-weight: normal
                 @extend %titulos
-                
+
         &__item
             display: none
             .items
@@ -113,21 +112,19 @@
         width: 80%
         margin: auto
 
-    
+
     &__links
-        border: 1px solid red
         padding-top: 2em
         display: flex
         justify-content: space-around
         align-items: center
 
-        >a 
+        >a
             background: $bg-triangle-Contact
             line-height: 5.2
             padding: .5em
             width: 120px
             height: 120px
-            border: 1px solid blue
             border-radius: 50%
             text-align: center
             @extend %parrafo
@@ -137,17 +134,13 @@
     &__contents
         position: relative
         &__item
-            background: #eee
-            padding: 1em
-            border_ 1px solid #bbb
+            margin-top: 2em
             display: none
             width: 100%
-            
+            .item
+                width: 25%
+                text-align: center
+                padding: 1em
 
             &.active
-                display: flex
-                align-items: center
-                justify-content: space-around
-    
-
-
+                @include mainDistribute

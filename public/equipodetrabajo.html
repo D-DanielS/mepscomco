@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Mep´s S.A.S</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png"/>
+    <link rel="manifest" href="./images/manifest.json"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+  </head>
+  <body>
+    <nav>
+      <div class="menu__movil"><a class="menu__movil__main" href="index.html"><img src="./images/logoWhite.png" alt="logo"/></a><i class="fa fa-bars fa-2x iconMenu" id="iconMenu"></i></div>
+      <ul class="menu menu__index" id="menu">
+        <li class="menu__item"><a class="menu__item__link" href="index.html">inicio</a></li>
+        <li class="menu__item"><a class="menu__item__link" href="trabajos.html">trabajos</a></li>
+        <li class="menu__item"><a class="menu__item__link" href="publipan.html">publipan    </a></li>
+        <li class="menu__item contacto"><a class="menu__item__link" href="javascript:desplegar('block');">contacto</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div id="bgventana">
+        <div id="ventana"><a href="javascript:desplegar('none');">Cerrar</a>
+          <form>
+            <label>nombre</label>
+            <input type="text" name="name" autofocus="autofocus" required="required"/>
+            <label>correo electrónico</label>
+            <input type="email" name="mail" required="required"/>
+            <label>teléfono</label>
+            <input type="tel" maxlength="10"/>
+            <label>mensaje</label>
+            <textarea id="mensaje" name="" cols="30" rows="10" required="required"></textarea>
+            <div class="politica__datos">
+              <input type="checkbox" required="required"/>
+              <p>Aceptas las condiciones y confirmas nuestra <a href="./pdf/politicas-de-tratamiento-de-la-informacion.pdf"  download="PoliticaDatos">Política de datos. </a></p>
+            </div>
+            <div class="button">
+              <button>enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="contenedor__header__et">
+        <div class="contenedor__header__et__float">
+          <div class="contenedor__header__et__float__triangle"></div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="equipodetrabajo">
+        <div class="equipodetrabajo__title">
+          <h2>Equipo de trabajo </h2>
+        </div>
+        <div class="equipodetrabajo__description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="perfiles__title">
+        <h2>Perfiles de trabajo</h2>
+      </div>
+      <div class="perfiles">
+        <div class="perfiles__items">
+          <div class="perfiles__items__avatar">
+            <figure><img src="https://pbs.twimg.com/profile_images/723686378366767104/zTjnKols_400x400.jpg"/></figure>
+          </div>
+          <div class="perfiles__items__description">
+            <div class="perfiles__items__description__title">
+              <h2>Juan lizcano</h2>
+            </div><a class="perfiles__items__description__socialmedia twitter"><i class="fa fa-twitter"></i>
+              <p>@perfilfalso</p></a>
+            <div class="perfiles__items__description__rol">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="perfiles__items">
+          <div class="perfiles__items__avatar">
+            <figure><img src="https://pbs.twimg.com/profile_images/723686378366767104/zTjnKols_400x400.jpg"/></figure>
+          </div>
+          <div class="perfiles__items__description">
+            <div class="perfiles__items__description__title">
+              <h2>Cristian Manjaro</h2>
+            </div><a class="perfiles__items__description__socialmedia facebook"><i class="fa fa-facebook"></i>
+              <p>perfilfalso</p></a>
+            <div class="perfiles__items__description__rol">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="perfiles__items">
+          <div class="perfiles__items__avatar">
+            <figure><img src="https://pbs.twimg.com/profile_images/723686378366767104/zTjnKols_400x400.jpg"/></figure>
+          </div>
+          <div class="perfiles__items__description">
+            <div class="perfiles__items__description__title">
+              <h2>Cristina Ferreira</h2>
+            </div><a class="perfiles__items__description__socialmedia twitter"><i class="fa fa-twitter"></i>
+              <p>@perfilfalso</p></a>
+            <div class="perfiles__items__description__rol">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="perfiles__items">
+          <div class="perfiles__items__avatar">
+            <figure><img src="https://pbs.twimg.com/profile_images/723686378366767104/zTjnKols_400x400.jpg"/></figure>
+          </div>
+          <div class="perfiles__items__description">
+            <div class="perfiles__items__description__title">
+              <h2>Niche Segura</h2>
+            </div><a class="perfiles__items__description__socialmedia facebook"><i class="fa fa-facebook"></i>
+              <p>perfilfalso</p></a>
+            <div class="perfiles__items__description__rol">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="perfiles__items">
+          <div class="perfiles__items__avatar">
+            <figure><img src="https://pbs.twimg.com/profile_images/723686378366767104/zTjnKols_400x400.jpg"/></figure>
+          </div>
+          <div class="perfiles__items__description">
+            <div class="perfiles__items__description__title">
+              <h2>Catalina rivera</h2>
+            </div><a class="perfiles__items__description__socialmedia twitter"><i class="fa fa-twitter"></i>
+              <p>@perfilfalso</p></a>
+            <div class="perfiles__items__description__rol">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="perfiles__items">
+          <div class="perfiles__items__avatar">
+            <figure><img src="https://pbs.twimg.com/profile_images/723686378366767104/zTjnKols_400x400.jpg"/></figure>
+          </div>
+          <div class="perfiles__items__description">
+            <div class="perfiles__items__description__title">
+              <h2>Luisa Mesclao</h2>
+            </div><a class="perfiles__items__description__socialmedia facebook"><i class="fa fa-facebook"></i>
+              <p>perfilfalso</p></a>
+            <div class="perfiles__items__description__rol">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footer__info__contenedor"> 
+          <div class="footer__info__contenedor__items">
+            <div class="items"><i class="fa fa-map-marker"></i>
+              <p>Cll 11 #7-39 Edif fenalco ofi - 304</p>
+            </div>
+            <div class="items"><i class="fa fa-mobile"></i>
+              <p>315 586 2421</p>
+            </div>
+            <div class="items"><i class="fa fa-whatsapp"></i>
+              <p>+57 315 586 2421</p>
+            </div>
+            <div class="items"><i class="fa fa-envelope"></i>
+              <p>contacto@meps.com.co  </p>
+            </div>
+          </div>
+          <div class="footer__socialmedia"><a class="footer__socialmedia__items" target="_blank" href="https://www.facebook.com/meps.sas/"><i class="fa fa-facebook"></i></a><a class="footer__socialmedia__items" target="_blank" href="https://twitter.com/mepssas"><i class="fa fa-twitter"></i></a><a class="footer__socialmedia__items" target="_blank" href="https://www.instagram.com/meps_sas/"><i class="fa fa-instagram"></i></a><a class="footer__socialmedia__items" target="_blank" href="https://www.youtube.com/channel/UCseya4SB-pdEEiEE_beD6oQ"><i class="fa fa-youtube-play"></i></a></div>
+        </div>
+      </div>
+      <div class="footer__derechos">
+        <p>copyright &copy; 2016</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/formulario.js"></script>
+    <script src="./js/clientes.js"></script>
+    <script src="./js/eskju.jquery.scrollflow.js"></script>
+  </body>
+</html>

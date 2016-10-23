@@ -1,0 +1,157 @@
+/*header*/
+.contenedor__header__et
+    @include widthHeight(100%, 450px)
+    @include url-images(et1)
+    @include bgi(cover , 70% 50%)
+
+    @include mediaMin(1024)
+        @include widthHeight(100%, 550px)    
+        @include url-images(et2)
+        @include bgi(cover , top center)
+        
+        
+    position: relative
+
+    &__float
+        @include widthHeight(100%, 120px)
+        background: transparent
+
+        position: absolute
+        bottom: -1px
+        left: 0
+        right: 0
+
+        z-index: 2
+        overflow: hidden
+
+        @include mainCenter
+
+        &__triangle
+            border-left: 800px solid $blanco
+            border-right: 800px solid $blanco
+            @include mediaMin(1400)
+                border-left: 1000px solid $blanco
+                border-right: 1000px solid $blanco
+            border-top: 120px solid rgba($header-triangle,.0000001)
+
+
+/* descripcion*/
+
+.equipodetrabajo
+    &__title
+        padding: 2em 0
+        margin-top: 2em
+        >h2
+            @extend %titulos
+            color: $gris
+            font-weight: normal
+
+    &__description
+        padding: 2em 0
+        width: 90%
+        margin: 0 auto
+        @include mediaMin(1024)
+            width: 70%
+        >p
+            @extend %parrafo
+            color: $gris
+
+
+
+/*Perfiles de trabajo*/
+.twitter
+    color: $twitter !important
+.facebook
+    color: $facebook !important
+
+.perfiles
+    padding-bottom: 2em
+    @include mediaMin(768)
+        @include mainCenter
+
+    @include mediaMin(1600)
+        width: 88%
+        margin: 0 auto
+    &__title
+        padding: 2.2em 0
+
+        >h2
+            @extend %titulos
+            color: $gris
+            font-weight: normal
+    &__items
+
+        border-radius: 2px
+        padding: 2em 0
+        background: $blanco-fa
+        box-shadow: 0 0 4px rgba($gris,.2)
+
+
+        @include mediaMax(760)
+            width: 80%
+            margin: 2.2em auto
+
+        @include mediaMin(768)
+            width: 46%
+        @include mediaMin(1024)
+            @include mainCenter
+            margin: 1em
+
+  
+
+
+        &__avatar
+            @include mediaMin(1024)
+                width: 26%
+            >figure
+                width: 150px
+                @extend %image
+                >img
+                    border-radius: 50%
+
+
+
+        &__description
+            @include mediaMin(1024)
+                width: 70%
+                
+            margin: 0 auto
+            &__title
+                padding: .2em 0
+                @include mediaMin(1024)
+                    padding: 0
+                >h2
+                    text-align: center
+                    @include mediaMin(1024)
+                        text-align: left
+                        width: 90%
+                        margin: 0 auto
+
+
+
+            &__socialmedia
+                @include mainCenter
+                @include mediaMin(1024)
+                    justify-content: flex-start
+                    width: 90%  
+                    margin: 0 auto
+                >i
+                    padding: 0 .25em
+
+                >p
+                    font-family: $font
+                    font-size: responsive 20px 21px
+                    text-transform: capitalize
+                    line-height: 1
+
+                .fa-facebook
+                    font-size: 1.3em
+                .fa-twitter
+                    font-size: 1.3em
+
+
+
+            &__rol
+                width: 90%
+                margin: 0 auto
+                padding: 1em 0

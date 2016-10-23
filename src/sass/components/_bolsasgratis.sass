@@ -3,16 +3,19 @@
 
     #modalventana
         @extend %modalventana
+        border: none
 
         >a
             text-transform: uppercase
             color: $gris
             font-size: 1.3em
-            padding: 2em 0 !important
+            padding: 3em 0 !important
             &:hover
-                text-decoration: underline
+                text-decoration: underline !important
 
         >form
+            width: 95%
+            margin: 0 auto
             .colum1,
             .colum2
                 >label
@@ -31,17 +34,17 @@
                     color: $gris
                     font-size: responsive 16px 18px
                     padding-left: .3em
-                    border-radius: 3px
 
                     &:focus
                         outline: none
                         border: 1px solid $carmin
+                        border-radius: 5px
 
 
                 >select
                     width: 100%
                     text-transform: capitalize
-                    height: 1.8em !important
+                    height: 2.5em !important
                     >option
                         text-transform: capitalize
                 .avisolegal
@@ -92,6 +95,9 @@
             &__bolsas__triangle
                 border-left: 800px solid transparent
                 border-right: 800px solid transparent
+                @include mediaMin(1400)
+                    border-left: 1000px solid transparent
+                    border-right: 1000px solid transparent
                 border-top:  70px solid  $blanco
 
     &__content

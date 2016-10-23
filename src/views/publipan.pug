@@ -37,39 +37,40 @@ html(lang="en")
             include ./includes/header/header-publipan.pug
 
         section
-            #quees
+            include ./includes/scroll/scrollpublipan.pug
+
+        section#id-quees
             include ./includes/publipan/queEsPublipan.pug
 
-        section
+        section#id-comofunciona
             include ./includes/publipan/comoFunciona.pug
 
-        section
+        section#id-noshacemoscargo
             include ./includes/publipan/nosHacemosCargo.pug
-            #ventajas
-        section
-            
+        
+        section#id-ventajas
             include ./includes/publipan/ventajas.pug
-        section
+        
+        section#id-historia
             include ./includes/publipan/historia.pug
 
-        section
+        section#id-patente
             include ./includes/publipan/patente.pug
-            #bolsas
 
-        section
+        section#id-bolsasgratis
             include ./includes/publipan/bolsasgratis.pug
 
-        section
+        section#id-videos
             include ./includes/publipan/videos.pug
             
-
         footer
             include ./includes/footer/footer.pug
 
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js")
         script(src="./js/menu.js")
         script(src="./js/formulario.js")
-        script(src="./js/videopublipan.js")        
+        script(src="./js/videopublipan.js")
+        script(src="./js/scroll.js")                  
         script(src="./js/eskju.jquery.scrollflow.js")
         
         

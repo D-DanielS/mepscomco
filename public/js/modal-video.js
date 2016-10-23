@@ -1,1 +1,8 @@
-function formPublipan(n){document.getElementById("modal").style.display=n,$(document).on("keydown",function(n){27==n.which&&(document.getElementById("modal").style.display="none")})}
+function formPublipan(valor){
+	document.getElementById('modal').style.display=valor;
+	$(document).on('keydown',function(e){
+		if(e.which == 27){
+			document.getElementById('modal').style.display="none";
+		}
+	});
+}

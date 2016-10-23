@@ -1,1 +1,8 @@
-function videopub(e){document.getElementById("bgvideo").style.display=e,$(document).on("keydown",function(e){27==e.which&&(document.getElementById("bgvideo").style.display="none")})}
+function videopub(valor){
+	document.getElementById('bgvideo').style.display=valor;
+	$(document).on('keydown',function(e){
+		if(e.which == 27){
+			document.getElementById('bgvideo').style.display="none";
+		}
+	});
+} 

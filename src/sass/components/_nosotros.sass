@@ -23,6 +23,17 @@
                 margin: 0 auto
                 color: $blanco
 
+            .button__et 
+                @include mainCenter
+                
+                padding-top: 1.3em
+                padding-bottom: 0
+               
+                >button 
+                    @include button(transparent, $blanco)
+                    width: 250px
+                    &:hover
+                        color: $bg-nosotros
         &__image
             @include widthHeight(100% , 400px)
             >figure

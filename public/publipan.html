@@ -58,9 +58,11 @@
         </div>
       </div>
       <div id="bgvideo">
-        <div id="bgvideopublipan"><a href="javascript:videopub('none');">x</a>
+        <div id="bgvideopublipan"><a href="javascript:videopub('none');" id="cerrarVid">x</a>
           <div class="items__video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/iBW-1FDOtaI" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            <video id="video" controls="controls" poster="./images/poster.jpg">           
+              <source src="./video/publipan.mp4" type="video/mp4"/>
+            </video>
           </div>
         </div>
       </div>
@@ -72,7 +74,9 @@
       </div>
     </header>
     <section>
-      <div id="quees"></div>
+      <div class="circle__contenedor__publipan"><a class="scroll circle__publipan" href="#id-quees"></a><a class="scroll circle__publipan" href="#id-comofunciona"></a><a class="scroll circle__publipan" href="#id-noshacemoscargo"></a><a class="scroll circle__publipan" href="#id-ventajas"></a><a class="scroll circle__publipan" href="#id-historia"></a><a class="scroll circle__publipan" href="#id-patente"></a><a class="scroll circle__publipan" href="#id-bolsasgratis"></a><a class="scroll circle__publipan" href="#id-videos">  </a></div>
+    </section>
+    <section id="id-quees">
       <div class="publipan__qe">
         <div class="publipan__qe__title">
           <h2 class="title">¿ qué es publipan?</h2>
@@ -96,7 +100,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="id-comofunciona">
       <div class="comofunciona">
         <div class="comofunciona__title">
           <h2 class="title">¿como funciona?</h2>
@@ -116,7 +120,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="id-noshacemoscargo">
       <div class="noshacemoscargo">
         <div class="noshacemoscargo__title">
           <h2 class="subtitle">Nosotros nos hacemos cargo de todo</h2>
@@ -147,12 +151,11 @@
           <hr/>
         </div>
       </div>
-      <div id="ventajas"></div>
     </section>
-    <section>
+    <section id="id-ventajas">
       <div class="ventajas">
         <div class="ventajas__title">
-          <h2 class="subtitle">Todos son ventaja</h2>
+          <h2 class="subtitle">Todos son ventajas</h2>
         </div>
         <div class="ventajas__content">
           <div class="ventajas__content__items scrollflow -pop -opacity">
@@ -170,7 +173,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="id-historia">
       <div class="historia">
         <div class="historia__title">
           <h2 class="title">historia publipan</h2>
@@ -192,7 +195,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="id-patente">
       <div class="patente">
         <div class="patente__title">
           <h2 class="title">patente publipan</h2>
@@ -204,9 +207,8 @@
           </div>
         </div>
       </div>
-      <div id="bolsas"></div>
     </section>
-    <section>
+    <section id="id-bolsasgratis">
       <div id="modal">
         <div id="modalventana"><a href="javascript:formPublipan('none');">Cerrar</a>
           <form action="">
@@ -278,7 +280,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="id-videos">
       <div class="video">
         <div class="video__title">
           <h2 class="title">galería de videos</h2>
@@ -319,12 +321,7 @@
               <p>contacto@meps.com.co  </p>
             </div>
           </div>
-          <div class="footer__socialmedia">
-            <div class="footer__socialmedia__items"><i class="fa fa-facebook"></i></div>
-            <div class="footer__socialmedia__items"><i class="fa fa-twitter"></i></div>
-            <div class="footer__socialmedia__items"><i class="fa fa-instagram"></i></div>
-            <div class="footer__socialmedia__items"><i class="fa fa-youtube-play"></i></div>
-          </div>
+          <div class="footer__socialmedia"><a class="footer__socialmedia__items" target="_blank" href="https://www.facebook.com/meps.sas/"><i class="fa fa-facebook"></i></a><a class="footer__socialmedia__items" target="_blank" href="https://twitter.com/mepssas"><i class="fa fa-twitter"></i></a><a class="footer__socialmedia__items" target="_blank" href="https://www.instagram.com/meps_sas/"><i class="fa fa-instagram"></i></a><a class="footer__socialmedia__items" target="_blank" href="https://www.youtube.com/channel/UCseya4SB-pdEEiEE_beD6oQ"><i class="fa fa-youtube-play"></i></a></div>
         </div>
       </div>
       <div class="footer__derechos">
@@ -334,7 +331,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/formulario.js"></script>
-    <script src="./js/videopublipan.js">       </script>
+    <script src="./js/videopublipan.js"></script>
+    <script src="./js/scroll.js">                 </script>
     <script src="./js/eskju.jquery.scrollflow.js"></script>
   </body>
 </html>

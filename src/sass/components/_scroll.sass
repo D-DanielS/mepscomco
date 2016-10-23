@@ -1,10 +1,14 @@
-.circle__contenedor
+.circle__contenedor,
+.circle__contenedor__publipan
   position: fixed
   top: 145px
   right: 3.5%
   z-index: 666
+  @include mediaMin(1024)
+    right: 1.8%
   
-  .circle
+  .circle,
+  .circle__publipan
     border: 1px solid $blanco
     width: 18px
     height: 18px

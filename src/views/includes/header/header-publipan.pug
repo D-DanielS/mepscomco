@@ -20,10 +20,10 @@
 
 #bgvideo
     #bgvideopublipan
-        a(href="javascript:videopub('none');") x
+        a(href="javascript:videopub('none');")#cerrarVid x
         .items__video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/iBW-1FDOtaI" frameborder="0" allowfullscreen)
-
+            video#video(controls poster="./images/poster.jpg")            
+                source(src="./video/publipan.mp4" type="video/mp4")
 
 .contenedor__header__publipan
     .contenedor__header__publipan__video

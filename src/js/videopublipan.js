@@ -5,4 +5,4 @@ function videopub(valor){
 			document.getElementById('bgvideo').style.display="none";
 		}
 	});
-}
+} 
